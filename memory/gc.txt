@@ -1,0 +1,71 @@
+gc 1 @0.011s 4%: 0.10+1.4+0.002 ms clock, 0.41+1.1/0.55/0+0.010 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 2 @0.020s 4%: 0.19+1.9+0.12 ms clock, 0.76+0.14/0.61/0+0.48 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 3 @0.033s 3%: 0.033+0.46+0.002 ms clock, 0.13+0.32/0.26/0.26+0.008 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 4 @0.043s 4%: 0.018+2.1+0.21 ms clock, 0.072+0.60/1.4/0.26+0.84 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 5 @0.055s 4%: 0.031+1.8+0.36 ms clock, 0.12+0.13/0.97/0.83+1.4 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 6 @0.071s 5%: 0.079+1.6+1.0 ms clock, 0.31+0/0.78/0.72+4.1 ms cpu, 4->4->1 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 7 @0.075s 5%: 0.15+1.9+0.001 ms clock, 0.63+0.99/0.011/0+0.007 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 8 @0.083s 5%: 0.025+2.3+0.003 ms clock, 0.10+0/0.63/0.81+0.012 ms cpu, 4->4->1 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 9 @0.090s 5%: 0.24+0.92+0.002 ms clock, 0.96+0.67/0.50/0.14+0.011 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 10 @0.096s 5%: 0.023+1.4+0.22 ms clock, 0.092+0.11/0.48/0.73+0.90 ms cpu, 4->4->1 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+# command-line-arguments
+gc 1 @0.011s 6%: 0.007+4.9+0.13 ms clock, 0.030+0.23/3.3/0+0.52 ms cpu, 4->4->3 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 2 @0.024s 6%: 0.011+2.5+0.13 ms clock, 0.047+0.077/2.0/0.99+0.52 ms cpu, 6->6->4 MB, 7 MB goal, 0 MB stacks, 0 MB globals, 4 P
+# command-line-arguments
+gc 1 @0.002s 14%: 0.068+1.8+0.027 ms clock, 0.27+1.1/0.79/0.44+0.11 ms cpu, 4->4->3 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 2 @0.009s 9%: 0.004+1.4+0.002 ms clock, 0.019+0.60/0.99/0.60+0.010 ms cpu, 7->7->6 MB, 7 MB goal, 0 MB stacks, 0 MB globals, 4 P
+gc 3 @0.033s 5%: 0.032+3.8+0.41 ms clock, 0.12+0.44/2.2/1.9+1.6 ms cpu, 13->13->8 MB, 13 MB goal, 0 MB stacks, 0 MB globals, 4 P
+#user#allocate:  1
+#user#allocate:  2
+#user#allocate:  3
+#user#allocate:  4
+#user#allocate:  5
+#user#allocate:  6
+#user#allocate:  7
+#user#allocate:  8
+#user#allocate:  9
+#user#allocate:  10
+#user#allocate:  11
+#user#allocate:  12
+#user#allocate:  13
+#user#allocate:  14
+#user#allocate:  15
+#user#allocate:  16
+gc 1 @0.003s 8%: 0.20+2.1+0.015 ms clock, 0.82+0.26/0.89/0.003+0.060 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+#user#allocate:  17
+#user#allocate:  18
+#user#allocate:  19
+#user#allocate:  20
+#user#allocate:  21
+#user#allocate:  22
+#user#allocate:  23
+#user#allocate:  24
+#user#allocate:  25
+#user#allocate:  26
+#user#allocate:  27
+#user#allocate:  28
+#user#allocate:  29
+#user#allocate:  30
+#user#allocate:  31
+#user#allocate:  32
+#user#allocate:  33
+gc 2 @0.009s 6%: 0.013+0.22+0.042 ms clock, 0.053+0.086/0.053/0.017+0.16 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+#user#allocate:  34
+#user#allocate:  35
+#user#gc finished
+#user#allocate:  36
+#user#allocate:  37
+#user#allocate:  38
+#user#allocate:  39
+#user#allocate:  40
+#user#allocate:  41
+#user#allocate:  42
+#user#allocate:  43
+#user#allocate:  44
+#user#allocate:  45
+#user#allocate:  46
+#user#allocate:  47
+#user#allocate:  48
+#user#allocate:  49
+gc 3 @0.010s 5%: 0.011+0.18+0.004 ms clock, 0.045+0.048/0/0.048+0.017 ms cpu, 4->4->0 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 4 P
+#user#terminate

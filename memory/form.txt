@@ -1,0 +1,25 @@
+gc 2      : 第一个GC周期
+@0.024s   : 从程序开始运行到第一次GC时间为0.024 秒
+1%        : 此次GC过程中CPU 占用率
+
+wall clock
+0.045+0.19+0.018 ms clock
+0.045 ms  : STW，Marking Start, 开启写屏障
+0.19 ms   : Marking阶段
+0.018 ms  : STW，Marking终止，关闭写屏障
+
+CPU time
+0.54+0.37/0.31/0.041+0.22 ms cpu
+0.54 ms   : STW，Marking Start
+0.37 ms  : 辅助标记时间
+0.31 ms  : 并发标记时间
+0.041 ms   : GC 空闲时间
+0.22 ms   : Mark 终止时间
+
+4->4->0 MB， 5 MB goal
+4 MB      ：标记开始时，堆大小实际值
+4 MB      ：标记结束时，堆大小实际值
+0 MB      ：标记结束时，标记为存活对象大小
+5 MB      ：标记结束时，堆大小预测值
+
+12 P      ：本次GC过程中使用的goroutine 数量
