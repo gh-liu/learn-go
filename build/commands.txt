@@ -1,0 +1,38 @@
+#
+# command-line-arguments
+#
+
+mkdir -p $WORK/b001/
+
+cat >$WORK/b001/importcfg << 'EOF' # internal
+# import config
+packagefile runtime=/home/sr/env/golang/go/pkg/linux_amd64/runtime.a
+EOF
+
+cd /home/sr/dev/golang/pkg/learn-go/compiler/build
+
+/home/sr/env/golang/go/pkg/tool/linux_amd64/compile -o $WORK/b001/_pkg_.a -trimpath "$WORK/b001=>" -p main -complete -buildid Zp1oi7iizEKfyop_J6ZO/Zp1oi7iizEKfyop_J6ZO -goversion go1.18.1 -c=4 -nolocalimports -importcfg $WORK/b001/importcfg -pack ./main.go
+/home/sr/env/golang/go/pkg/tool/linux_amd64/buildid -w $WORK/b001/_pkg_.a # internal
+
+cat >$WORK/b001/importcfg.link << 'EOF' # internal
+packagefile command-line-arguments=$WORK/b001/_pkg_.a
+packagefile runtime=/home/sr/env/golang/go/pkg/linux_amd64/runtime.a
+packagefile internal/abi=/home/sr/env/golang/go/pkg/linux_amd64/internal/abi.a
+packagefile internal/bytealg=/home/sr/env/golang/go/pkg/linux_amd64/internal/bytealg.a
+packagefile internal/cpu=/home/sr/env/golang/go/pkg/linux_amd64/internal/cpu.a
+packagefile internal/goarch=/home/sr/env/golang/go/pkg/linux_amd64/internal/goarch.a
+packagefile internal/goexperiment=/home/sr/env/golang/go/pkg/linux_amd64/internal/goexperiment.a
+packagefile internal/goos=/home/sr/env/golang/go/pkg/linux_amd64/internal/goos.a
+packagefile runtime/internal/atomic=/home/sr/env/golang/go/pkg/linux_amd64/runtime/internal/atomic.a
+packagefile runtime/internal/math=/home/sr/env/golang/go/pkg/linux_amd64/runtime/internal/math.a
+packagefile runtime/internal/sys=/home/sr/env/golang/go/pkg/linux_amd64/runtime/internal/sys.a
+packagefile runtime/internal/syscall=/home/sr/env/golang/go/pkg/linux_amd64/runtime/internal/syscall.a
+modinfo "0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tcommand-line-arguments\nbuild\t-compiler=gc\nbuild\tCGO_ENABLED=1\nbuild\tCGO_CFLAGS=\nbuild\tCGO_CPPFLAGS=\nbuild\tCGO_CXXFLAGS=\nbuild\tCGO_LDFLAGS=\nbuild\tGOARCH=amd64\nbuild\tGOOS=linux\nbuild\tGOAMD64=v1\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2"
+EOF
+
+mkdir -p $WORK/b001/exe/
+cd .
+/home/sr/env/golang/go/pkg/tool/linux_amd64/link -o $WORK/b001/exe/a.out -importcfg $WORK/b001/importcfg.link -buildmode=exe -buildid=8hTf5FRx45SqPN7zyxOy/Zp1oi7iizEKfyop_J6ZO/Zp1oi7iizEKfyop_J6ZO/8hTf5FRx45SqPN7zyxOy -extld=gcc $WORK/b001/_pkg_.a
+/home/sr/env/golang/go/pkg/tool/linux_amd64/buildid -w $WORK/b001/exe/a.out # internal
+
+mv $WORK/b001/exe/a.out main
